@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Kanit-Bold.ttf" />
+    <None Remove="Kanit-Italic.ttf" />
+    <None Remove="Kanit-Light.ttf" />
+    <None Remove="Kanit-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="SkiaSharp" Version="2.88.0" />
+    <PackageReference Include="Topten.RichTextKit" Version="0.4.158-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Kanit-Bold.ttf" />
+    <Resource Include="Kanit-Italic.ttf" />
+    <Resource Include="Kanit-Light.ttf" />
+    <Resource Include="Kanit-Regular.ttf" />
+  </ItemGroup>
+
+</Project>
